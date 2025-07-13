@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Code Zipper Pro</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header class="popup-header">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2H6C4.89 2 4 2.89 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                    <h1>Code Zipper Pro</h1>
+                    <p>Extract ChatGPT code blocks</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="popup-content">
+            <div class="usage-section">
+                <h2>Monthly Usage</h2>
+                <div class="usage-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Downloads this month:</span>
+                        <span class="stat-value" id="current-downloads">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Downloads remaining:</span>
+                        <span class="stat-value" id="remaining-downloads">10</span>
+                    </div>
+                </div>
+                <div class="usage-bar">
+                    <div class="usage-fill" id="usage-fill"></div>
+                </div>
+            </div>
+
+            <div class="instructions-section">
+                <h2>How to Use</h2>
+                <ol>
+                    <li>Open a ChatGPT conversation with code blocks</li>
+                    <li>Click the floating zip button that appears</li>
+                    <li>Code blocks will be extracted and zipped automatically</li>
+                    <li>Download starts immediately with organized filenames</li>
+                </ol>
+            </div>
+
+            <div class="upgrade-section">
+                <h2>Upgrade to Pro</h2>
+                <div class="upgrade-card">
+                    <h3>🚀 Unlimited Downloads</h3>
+                    <p>Remove monthly limits and get unlimited code extraction</p>
+                    <button class="upgrade-btn" id="upgrade-btn">
+                        <span>Coming Soon!</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h2>Settings</h2>
+                <div class="setting-item">
+                    <label for="monthly-limit">Monthly Download Limit:</label>
+                    <input type="number" id="monthly-limit" min="1" max="100" value="10">
+                </div>
+                <button class="save-settings-btn" id="save-settings">Save Settings</button>
+            </div>
+        </main>
+
+        <footer class="popup-footer">
+            <div class="links">
+                <a href="mailto:support@codezipperpro.com" class="support-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Contact Support
+                </a>
+                <span class="version">v1.0.0</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
