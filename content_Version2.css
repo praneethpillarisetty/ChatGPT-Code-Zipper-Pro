@@ -1,0 +1,21 @@
+#code-zipper-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #10a37f;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10000;
+  transition: transform 0.2s;
+}
+
+#code-zipper-fab:hover {
+  transform: scale(1.1);
+  background: #0c8a6a;
+}
